@@ -1,0 +1,758 @@
+
+/*  navbar */
+
+/* Custom CSS for Bootstrap 5 template designed for Web and Time-based Unit DESN1021  - WSU 2022 */
+/* Author: Web and Time-based Design unit */
+/* Date: Sept 23 / 2022 */
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* setting scroll behavior to smooth to create an ease in effect- learn more https://www.w3schools.com/cssref/pr_scroll-behavior.asp  */
+/* some browsers might not support this and they might require additional packages to be installed but Chorme and Firefox are fully compatible */
+
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+  font-family: 'NeueMachina';
+  src: url('../fonts/NeueMachina-Light.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'NeueMachina_reg';
+  src: url('../fonts/NeueMachina-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'NeueMachina_bold';
+  src: url('../fonts/NeueMachina-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+/* ----General body stylye---- */
+
+h1 {
+  font-family: 'NeueMachina', sans-serif;
+  font-weight: 700;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  float: right;
+}
+.logo1 {
+  height: 70px;
+  float: right;
+  padding-right: 100px;
+}
+
+.resume-paragraph {
+  font-size: 10px;
+  text-align: end;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.degree-school {
+  font-family: 'NeueMachina', sans-serif;
+  font-weight: bold;
+}
+
+.regular-font {
+  font-family: 'NeueMachina', sans-serif;
+  font-weight: normal;
+}
+
+.textt {
+  width: 450px;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.texttt {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.skill{
+
+}
+
+.skills {
+  font-size: 8px;
+  font-weight: 300;
+
+}
+
+.downloadmyresume {
+  text-align: center;
+  padding-top: 0px;
+}
+
+.btn-brand,
+.btn-brand:focus {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.btn-brand:hover {
+    background-color: white;
+    color: black;
+    border-color: #262521;
+}
+
+
+
+p, .logo {
+  display: inline-block;
+  vertical-align: middle; /* Optional: Align vertically in the middle */
+}
+
+body{
+    font-family: 'NeueMachina', sans-serif;
+    background-color: black;
+    color: #F0F0F0;
+
+}
+
+button {
+  color: black;
+  font-size: 35px;
+  background: transparent;
+  margin: 0 auto;
+  display: block;
+  font-family: 'NeueMachina', sans-serif;
+
+
+  /* Hover effect - Change the background color on hover */
+}
+
+
+.btn-12 {
+  color: white;
+  position: relative;
+  right: 40px; /* Adjusted for proportional increase */
+  bottom: 40px; /* Adjusted for proportional increase */
+  border: none;
+  width: 260px; /* Doubled the width */
+  height: 80px; /* Doubled the height */
+  line-height: 80px; /* Doubled the line-height */
+  -webkit-perspective: 460px; /* Doubled the perspective */
+  perspective: 460px; /* Doubled the perspective */
+
+}
+
+.btn-12 span {
+  display: block;
+  position: absolute;
+  width: 260px; /* Doubled the width */
+  height: 80px; /* Doubled the height */
+  border: 2px solid #93C572; /* Adjusted for proportional increase */
+  box-shadow: 0 0 10px #93C572, 0 0 10px #93C572 inset; /* Adjusted for proportional increase */
+  margin: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+    background-color: #93C572;
+}
+
+.btn-12 span:nth-child(1) {
+  box-shadow: 0 0 10px #93C572, 0 0 10px #93C572 inset; /* Adjusted for proportional increase */
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -40px; /* Doubled the origin */
+  -moz-transform-origin: 50% 50% -40px; /* Doubled the origin */
+  transform-origin: 50% 50% -40px; /* Doubled the origin */
+}
+
+.btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -40px; /* Doubled the origin */
+  -moz-transform-origin: 50% 50% -40px; /* Doubled the origin */
+  transform-origin: 50% 50% -40px; /* Doubled the origin */
+}
+
+.btn-12:hover span:nth-child(1) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.btn-12:hover span:nth-child(2) {
+  background: green;
+  color: white;
+  box-shadow: 0 0 10px #93C572, 0 0 10px #93C572 inset; /* Adjusted for proportional increase */
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+
+
+
+img.pdf {
+  width: 40px;
+}
+
+/* -------------------------Layout Design------------------------------------- */
+
+/* Styles for Navbar  */
+/* --- navbar logo size */
+.navbar-brand img{
+
+    width: 7rem;
+}
+
+/* use media query to hide navbar logo on large screens since we have 2 of them */
+@media screen and (min-width:992px) {
+    .logo_mobile{
+        display:none;
+    }
+}
+/* chnaging hover color for navbar */
+.navbar .navbar-nav .nav-link:hover {
+    color: Black;
+    background-color: transparent !important;
+    /* Custom CSS to make the navbar background transparent */
+
+
+}
+
+/* Styles for banner */
+
+/* setting font family Fredoka to be visibile only on large screens  */
+@media screen and (min-width:768px){
+    .banner{
+
+        font-family: 'Bungee', cursive;
+        color: #F0F0F0;
+        background-color: black;
+    }
+
+}
+
+/* use media query to adjust the banner for smaller screens and defining CSS properties for Go To Top Button */
+@media screen and (max-width:766px) {
+
+    .banner{
+        padding: 2em;
+        text-align: center;
+        font-size: 1rem;
+        border: 0;
+    }
+
+    img{
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+
+    /* setting  < top botton> to be invisible on smaller screens */
+    #myBtn{
+        visibility: hidden;
+    }
+}
+/* setting button size for screens between 843px and 852px ( mainly for Ipad Air/ iPhone 12 /SE/XS */
+@media screen and (min-width:843px) and (max-width:852px){
+    #myBtn{
+        padding: .3rem !important;
+        left:0.2rem !important;
+        /* !important tag assures the executation of the code by browsers */
+    }
+}
+
+/* setting opacity for top button only for iPad Mini */
+@media screen and (min-width:1023px) and (max-width:1025px) {
+
+    #myBtn{
+        opacity: 0.7;
+
+    }
+
+}
+    /* GO TO TOP BUTTON CSS  */
+/* Learn about this at :  https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 1rem;
+    z-index: 99;
+    outline: none;
+    cursor: pointer;
+
+    border-radius: 4px;
+  }
+
+  #myBtn:hover {
+    background-color: red;
+  }
+
+.container p-5 {
+    background: black;
+  }
+
+
+/* ---------------------------- */
+
+
+/* Navigation styling : ONLY FOR LARGE SCREENS */
+
+/* a.vlink {
+    color : white;
+    position:relative;
+    height:54px;
+    width:72px;
+    text-align:center;
+    line-height:54px;
+    display:block;
+    font-size:1.2rem;
+  }
+  a.vlink span {
+    position : absolute;
+    opacity: 0;
+    transition : transform 400ms ease-out;
+    margin-left:24px;
+    box-shadow : 2px 4px 3px 1px rgba(0,0,0,0.2)
+  }
+
+
+  a.vlink span:before {
+    content : '';
+    display:block;
+    width:0;
+    height:0;
+    position:absolute;
+    border-top:8px solid transparent;
+    border-bottom:8px solid transparent;
+    border-right:8px solid #000;
+    left:-12px;
+    top:33%;
+  }
+
+  a.vlink span:hover {
+    background : black !important;
+  }
+
+  a.vlink:hover {
+    box-shadow : 1px 2px 3px black;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2825b+0,e55b2b+50,f07146+100;Red+3D+%232 */
+    /* background: black;
+    background: black;
+    background: black;
+    background: black;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='black', endColorstr='black',GradientType=1 );
+  }
+
+  a.vlink:hover span {
+    opacity:1;
+    width:120px;
+    transform:translateX(12px);
+    background : black;
+    font-size:16px;
+    border-radius:6px;
+    border-left:4px solid #000;
+    padding : 0px 12px 0px 12px
+  }
+
+  ul.lg_menu {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+    /* background: rgb(69,72,77);
+    background: -moz-linear-gradient(left,  rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to right,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 );
+    box-shadow :-6px 12px 5px 2px rgba(145,145,145,0.5)
+  }
+  nav.side{
+    z-index: 200;
+  }  */
+
+  /* Navigation styling for transparent navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: transparent !important; /* Set background to transparent */
+  }
+
+  .left-tab,
+  .right-tabs {
+    display: flex;
+    align-items: center;
+  }
+
+  .right-tabs a {
+    margin-left: 15px;
+    color: #333;
+    text-decoration: none;
+    /* Adding a transition effect for smoother color change */
+    transition: color 0.3s ease-in-out;
+  }
+
+  /* Change the color on hover */
+  .right-tabs a:hover {
+    color: black;
+  }
+
+
+
+
+/* video container styles */
+
+.video-container {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  video {
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+
+  .video-container:after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: 1;
+  }
+
+/* text styling for background */
+  .callout {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  .callout1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    padding-top: 100px;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+  }
+
+  @keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+ img.profile {
+
+   height: 200px;
+   width: 200px;
+
+ }
+
+/* Css for name animation */
+.home {
+  margin-bottom: 0;
+  background: white;
+	align-items: center;
+	}
+
+.intro {
+	color: White;
+}
+
+.typewrite {
+	 display: inline-block;
+	 color: white;
+}
+
+.break:after {
+    content: '\A';
+    white-space: pre;
+}
+
+/* PARALLAX - Start - Adapted from: https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm */
+
+.parallax-container {
+max-width: 960px;
+margin: 0 auto;
+}
+
+/* ============================================================
+SECTIONS
+============================================================ */
+section.module:last-child {
+margin-bottom: 0;
+}
+section.module h3 {
+margin-bottom: 40px;
+font-family: 'Bungee', cursive;
+font-size: 30px;
+}
+section.module p {
+margin-bottom: 40px;
+font-size: 16px;
+font-weight: 300;
+}
+section.module p.skills {
+  font-size: 17px;
+  max-width: 500px;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+section.module p:last-child {
+margin-bottom: 0;
+}
+section.module.content {
+padding: 40px 0;
+}
+
+section.module.content:last-child {
+margin-bottom: 60px;
+}
+section.module.parallax {
+padding: 120px 0;
+background-position: 0 0;
+}
+section.module.parallax h2 {
+color: #82A510;
+font-size: 48px;
+line-height: 1;
+font-weight: 700;
+text-align: center;
+text-transform: uppercase;
+text-shadow: 0 0 10px white;
+}
+section.module.parallax-1 {
+background-image: url("../img/back1.jpg");
+background-position: 50% 0;
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: black;
+background-blend-mode: screen;
+}
+section.module.parallax-2 {
+background-image: url("../img/back3.jpg");
+background-position: 50% 0;
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: black;
+background-blend-mode: screen;
+}
+section.module.parallax-3 {
+background-image: url("../img/zurag1.jpg");
+background-position: 50% 0;
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: black;
+background-blend-mode: screen;
+}
+
+section.module.parallax-4 {
+background-image: url("../img/back4.jpg");
+background-position: 50% 0;
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: black;
+background-blend-mode: screen;
+}
+
+section.module.parallax-5 {
+background-image: url("../img/zurag2.jpg");
+background-position: 50% 0;
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: black;
+background-blend-mode: screen;
+}
+section.module.parallax-6 {
+background-image: url("../img/hyams2.jpg");
+background-position: 50% 0;
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: black;
+background-blend-mode: screen;
+}
+section.module.parallax-7 {
+background-image: url("../img/nowuknowback.jpg");
+background-position: 50% 0;
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: black;
+background-blend-mode: screen;
+}
+section.module.parallax-8 {
+background-image: url("../img/beach1.jpg");
+background-position: 50% 0;
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: black;
+background-blend-mode: screen;
+}
+section.module.parallax-9 {
+background-image: url("../img/pet.jpg");
+background-position: 50% 0;
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: black;
+background-blend-mode: screen;
+}
+
+
+@media all and (min-width: 600px) {
+section.module h3 {
+  font-size: 42px;
+}
+section.module p {
+  font-size: 20px;
+}
+section.module.parallax {
+  padding: 300px 0;
+}
+section.module.parallaxfirst {
+  padding-bottom: 300px;
+
+}
+section.module.parallax h2 {
+  font-size: 96px;
+}
+}
+@media all and (min-width: 960px) {
+section.module.parallax h2 {
+  font-size: 160px;
+}
+}
+/* PARALLAX - End */
+
+/* music player start */
+
+/* LIGHTBOX - Start */
+
+img.lights:hover {
+filter: drop-shadow(5px 5px 10px black);
+}
+
+/* LIGHTBOX - End */
+
+/* SWIPER CAROUSEL - Start */
+
+.swiper {
+  width: 100%;
+}
+
+img.slideswipe {
+  height: 500px;
+}
+
+.swiper-button-prev {
+  color: white;
+  font-weight: 700;
+  font-size: 5em;
+}
+
+.swiper-button-next {
+  color: white;
+  font-weight: 700;
+  font-size: 5em;
+}
+
+
+/* SWIPER CAROUSEL - End */
+
+/* setting background image for body */
+
+body.aboutme {
+    height: 100vh;
+    min-height: 400px;
+    background-size: cover;
+    background-image: url(../img/aboutmeback.jpg);
+
+}
+
+
+/* using media query to adjust image position on smaller devices.  */
+
+
+@media screen and (max-width:600px) {
+
+    body.aboutme {
+        background-position:35% 30% ;
+        /* change these numbers according to your image/ do not change both at the same time.  */
+        /* IDEA: first, play with these numbers with broweser's inspector tool */
+    }
+
+}
+
+.downloadmyresume {
+ padding-top: 0px;
+}
+
+.btn-brand,
+.btn-brand:focus {
+    background-color: Black;
+    color: white;
+    border-color: white;
+}
+
+.btn-brand:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.bi {
+
+  color: white;
+}
+img.logonowuknow {
+  height: 400px;
+  width: 400px;
+}
+
+.special {
+  padding-top: 200px;
+}

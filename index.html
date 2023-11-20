@@ -1,0 +1,273 @@
+<!-- Bootstrap 5 template designed for Web and Time-Based Design unit [DESN1021]- 2022 -->
+<!-- Date: Sep 23 / 2022  -->
+<!-- Author: Web and Time Based Unit -->
+<!-- ------------------------------------------------------------------------------------ -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- SWIPER CDN Style - Start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- favicon -->
+    <title>Portolio</title>
+  </head>
+
+  <body>
+    <!-- IDEA : We can use javascript to navigate to the top of the page: here is an example: -->
+    <!-- ------------------------------------------------------------------  This needs to be at Top -->
+<!-- Go to top button with Jaava script. Learn more about it, https://www.w3schools.com/howto/howto_js_scroll_to_top.asp  -->
+<button class="btn btn-success p-lg-3 text-center" onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-chevron-bar-up pe-2"></i>Top</button>
+<!-- ------------------------------------------------------------------ -->
+
+
+
+<!-- navbar starts  -->
+<!--Navbar --Navbar starts -->
+
+
+
+<!-- mobile screen menu only visible on small screens -->
+
+<!-- <nav  class="navbar d-lg-none navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Otgonbileg Batbileg</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutme.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+   <!-- this menu will be visibile only on screens larger than medium -->
+
+    <!-- <nav class=" side vh-100 d-flex align-items-center position-fixed start-0 top-0 d-none d-lg-block " role="navigation">
+        <div class="p-2">
+          <div id="mainNav">
+            <ul class="list-unstyled lg_menu rounded ms-2">
+              <li><a class="vlink rounded border-0 active" href="index.html"><i class="bi bi-house-door"></i> <span>Home</span></a></li>
+              <li><a class="vlink rounded" href="portfolio.html"><i class="bi bi-view-list"></i> <span>Portolio</span></a></li>
+              <li><a class="vlink rounded" href="aboutme.html"><i class="bi bi-person-lines-fill"></i> <span>About me</span></a></li>
+              <li><a class="vlink rounded" href="contact.html"><i class="bi bi-person-lines-fill"></i> <span>Contact</span></a></li>
+
+            </ul>
+          </div>
+        </div>
+    </nav> -->
+
+
+
+    <section class="module parallaxfirst parallax-1" data-type="background" data-speed="10">
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+              <!-- inline navbar brand only for large screens -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="photography.html">Photography</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nowuknow.html">nowuknow.</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://calendly.com/batbilego/30min" target="_blank">Schedule a meeting?</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <div class="parallax-container">
+
+
+
+
+
+        <h1 class="display-3 text-end special text-dark text-bold">OBI BATBILEG</h1>
+        <p class="lead text-end text-dark">
+            Hello, I'm a passionate and dedicated professional with a flair for problem-solving. Currently pursuing a Bachelor's degree in Information Systems at Western Sydney University.
+        </p>
+
+        <!-- LIGHTBOX - Start of image gallery - sourced from: https://www.cssscript.com/lightbox-gallery-bootstrap-5/ -->
+<!-- <div class="row">
+<a href="img/portfolio1.jpg" data-toggle="lightbox" data-gallery="mixedgallery" class="col-sm-4">
+<img src="img/portfolio1.jpg" alt="Example of obi's Instagram work" class="img-fluid lights mb-2">
+</a>
+
+<a href="img/portfolio2.jpg" data-toggle="lightbox" data-gallery="mixedgallery" class="col-sm-4">
+<img src="img/portfolio2.jpg" alt="Example of obi's Instagram work" class="img-fluid lights">
+</a>
+
+<a href="img/portfolio3.jpg" data-toggle="lightbox" data-gallery="mixedgallery" class="col-sm-4">
+<img src="img/portfolio3.jpg" alt="Example of obi's Instagram work" class="img-fluid lights">
+</a>
+</div>
+
+<div class="row">
+  <a href="img/portfolio4.jpg" data-toggle="lightbox" data-gallery="mixedgallery" class="col-sm-4">
+  	<img src="img/portfolio4.jpg" alt="Example of obi's Instagram work" class="img-fluid lights">
+</a>
+
+  <a href="img/portfolio5.jpg" data-toggle="lightbox" data-gallery="mixedgallery" class="col-sm-4">
+  	<img src="img/portfolio5.jpg" alt="Example of obi's Instagram work" class="img-fluid lights">
+</a>
+
+  <a href="img/portfolio6.jpg" data-toggle="lightbox" data-gallery="mixedgallery" class="col-sm-4">
+  	<img src="img/portfolio6.jpg" alt="Example of obi's Instagram work" class="img-fluid lights">
+</a>
+</div> -->
+<!-- LIGHTBOX - End of image gallery -->
+
+      </div>
+
+    </section>
+
+    <section class="module parallax parallax-2" data-type="background" data-speed="10">
+      <div class="parallax-container">
+
+        <h1>Product Specialist</h1>
+
+  <p class="textt">
+    To help dreamers become doers.<br>
+    To help passion expand human potential.<br>
+    To do the best work of our lives.
+  </p>
+  <img class="logo" src="img/apple.png" alt="Apple Logo">
+
+      </div>
+    </section>
+
+
+    <section class="module parallax parallax-3" data-type="background" data-speed="10">
+      <div class="parallax-container">
+        <h1 class="text-end">Education</h1>
+
+        <p class="text-end">
+Embarking on my educational journey, I pursued Bachelor of Information Systems at Western Sydney University, refined my IT skills with Diploma of Information Technology focused on Networking at TAFE NSW.
+        </p>
+        <!-- <img class="logo1 text-end" src="img/tafe.png" alt="Tafe NSW Logo">
+        <img class="logo1 text-end" src="img/wsu logo.png" alt="Western sydney University Logo"> -->
+
+
+      </div>
+    </section>
+
+    <section class="module parallax parallax-4" data-type="background" data-speed="10">
+      <div class="parallax-container">
+
+
+
+  <div class="downloadmyresume"><a href="doc/RESUME_1.pdf" target="_blank" class="btn btn-brand">Download CV <img style="width: 20px;" src="img/pdf.png" alt="pdf logo"></a></div>
+
+
+
+        <!-- <p class="text-dark skills texttt"><b>Theoretical:</b> <br><br>Data Structures and Algorithms,<br> Object Oriented Programming,<br> Web development techniques, <br> Database, Mobile app development, <br>Human-Computer Interaction Design,<br> Social Computing, <br>SDLC, <br>Agile methodologies, <br>Sales,<br> Operations,<br> Project Management <br> <br> <b>Technical:</b><br><br> C++, Java, Swift, Python, Javascript, PHP, CSS, HTML, MySQLi, TCP/IP & OSI Model, Adobe Creative Cloud Softwares, Figma, Microsoft 365, Process mapping <br> -->
+
+      </div>
+    </section>
+
+    <section class="module parallax parallax-5" data-type="background" data-speed="10">
+      <div class="parallax-container">
+        <h1 class="text-center">Let's connect and explore opportunities to collaborate! 🚀✨</h1>
+
+
+
+      </div>
+    </section>
+
+
+
+
+
+        <!-- FOOTER - Start -->
+        <div class="container footer my-3 py-3">
+        <div class="row">
+        <div class="col text-center">
+                      <!-- footer information and social media links -->
+                <p class="text-center mt-3">
+                <a class="footsocial" href="tel:+61414290914"><i class="bi bi-telephone fs-1 p-3"></i></a>
+                <a class="footsocial" href="https://www.instagram.com/obi.jpg/" target="_blank"><i class="bi bi-instagram fs-1 p-3"></i></a>
+                <a class="footsocial" href="mailto:22037760@student.westernsydney.edu.au" target="_blank"><i class="bi bi-envelope fs-1 p-3"></i></a>
+                <a class="footsocial" href="https://www.linkedin.com/in/otgonbilegb/" target="_blank"><i class="bi bi-linkedin fs-1 p-3"></i></a>
+                </p>
+                <p class="text-center mt-3">
+                |   &copy; Otgonbileg Batbileg
+                </p>
+        </div>
+        </div>
+        </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+
+      <!-- LIGHTBOX JS - Start -->
+
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.2.8/bs5-lightbox.min.js"></script>
+
+<!-- LIGHTBOX JS - End -->
+<!-- CAROUSEL SWIPER CDN for Java Script - Start -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- CAROUSEL SWIPER CDN for Java Script - End -->
+
+  <!-- CAROUSEL SWIPER Java Script Custom - Start -->
+  <script src="js/script.js"> </script>
+  <!-- CAROUSEL SWIPER Java Script Custom - Start -->
+
+  <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+
+  </body>
+  </html>
