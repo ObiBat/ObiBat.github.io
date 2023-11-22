@@ -11,11 +11,11 @@ Skills: Problem Solving · HTML5 · Databases · MySQLi · HTML · Cascading Sty
 Responsive Design: The website is crafted with a mobile-first approach, ensuring a seamless experience on devices of all sizes.
 Interactive Elements: Explore my projects, resume, and educational background through interactive and engaging user interfaces.
 Dynamic Resume: View my detailed resume with information about my education, work experience, and skills.
-#Technologies Used
+# Technologies Used
 HTML5: Structured the content for a clean and accessible layout.
 CSS3: Styled the website with modern design principles, ensuring a visually appealing presentation.
 JavaScript: Implemented interactive elements and dynamic features to enhance user engagement.
-#Sections
+# Sections
 Home: An introduction to who I am and what I do.
 Projects: Showcase of my latest and most notable projects with descriptions and links.
 Resume: Detailed information about my educational background, work experience, and skills.
