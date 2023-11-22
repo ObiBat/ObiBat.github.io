@@ -141,70 +141,6 @@ button {
 }
 
 
-.btn-12 {
-  color: white;
-  position: relative;
-  right: 40px; /* Adjusted for proportional increase */
-  bottom: 40px; /* Adjusted for proportional increase */
-  border: none;
-  width: 260px; /* Doubled the width */
-  height: 80px; /* Doubled the height */
-  line-height: 80px; /* Doubled the line-height */
-  -webkit-perspective: 460px; /* Doubled the perspective */
-  perspective: 460px; /* Doubled the perspective */
-
-}
-
-.btn-12 span {
-  display: block;
-  position: absolute;
-  width: 260px; /* Doubled the width */
-  height: 80px; /* Doubled the height */
-  border: 2px solid #93C572; /* Adjusted for proportional increase */
-  box-shadow: 0 0 10px #93C572, 0 0 10px #93C572 inset; /* Adjusted for proportional increase */
-  margin: 0;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-    background-color: #93C572;
-}
-
-.btn-12 span:nth-child(1) {
-  box-shadow: 0 0 10px #93C572, 0 0 10px #93C572 inset; /* Adjusted for proportional increase */
-  -webkit-transform: rotateX(90deg);
-  -moz-transform: rotateX(90deg);
-  transform: rotateX(90deg);
-  -webkit-transform-origin: 50% 50% -40px; /* Doubled the origin */
-  -moz-transform-origin: 50% 50% -40px; /* Doubled the origin */
-  transform-origin: 50% 50% -40px; /* Doubled the origin */
-}
-
-.btn-12 span:nth-child(2) {
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-  -webkit-transform-origin: 50% 50% -40px; /* Doubled the origin */
-  -moz-transform-origin: 50% 50% -40px; /* Doubled the origin */
-  transform-origin: 50% 50% -40px; /* Doubled the origin */
-}
-
-.btn-12:hover span:nth-child(1) {
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-}
-
-.btn-12:hover span:nth-child(2) {
-  background: green;
-  color: white;
-  box-shadow: 0 0 10px #93C572, 0 0 10px #93C572 inset; /* Adjusted for proportional increase */
-  -webkit-transform: rotateX(-90deg);
-  -moz-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
-}
 
 img {
    margin-bottom: 2rem;
@@ -218,6 +154,7 @@ img.git {
   justify-content: center;
   align-items: center;
   margin-top: 20px; /* Adjust this margin as needed */
+  border: none;
 }
 
 iframe {
@@ -379,21 +316,21 @@ background-color: black;
 background-blend-mode: screen;
 }
 section.module.parallax-3 {
-background-image: url("../img/zurag1.jpg");
+background-image: url("../img/swipe9.jpg");
 background-position: 50% 0;
 background-repeat: repeat;
 background-attachment: fixed;
-background-size: cover;
+background-size:  contain;
 background-color: black;
 background-blend-mode: screen;
 }
 
 section.module.parallax-4 {
-background-image: url("../img/back4.jpg");
+background-image: url("../img/hulgai.jpg");
 background-position: 50% 0;
 background-repeat: repeat;
 background-attachment: fixed;
-background-size: cover;
+background-size:  cover;
 background-color: black;
 background-blend-mode: screen;
 }
@@ -403,7 +340,7 @@ background-image: url("../img/zurag2.jpg");
 background-position: 50% 0;
 background-repeat: repeat;
 background-attachment: fixed;
-background-size: cover;
+background-size: contain;
 background-color: black;
 background-blend-mode: screen;
 }
@@ -421,7 +358,7 @@ background-image: url("../img/nowuknowback.jpg");
 background-position: 50% 0;
 background-repeat: repeat;
 background-attachment: fixed;
-background-size: cover;
+background-size: contain;
 background-color: black;
 background-blend-mode: screen;
 }
@@ -463,6 +400,7 @@ background-blend-mode: screen;
 
   }
   section.module.parallax-1 {
+    background-size:  contain;
     background-position: 20% 0;
 
   }
@@ -477,6 +415,26 @@ background-blend-mode: screen;
     background-image: url("../img/nowuknowback.jpg");
     background-position: 50% 40%;
     background-size: contain;
+  }
+
+  section.module.parallax-3 {
+  background-image: url("../img/swipe9.jpg");
+  background-position: 50% 0;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-color: black;
+  background-blend-mode: screen;
+  background-size:  contain;
+  }
+
+  section.module.parallax-5 {
+  background-image: url("../img/zurag2.jpg");
+  background-position: 50% 0;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size:  contain;
+  background-color: black;
+  background-blend-mode: screen;
   }
 
   .textt {
@@ -574,29 +532,7 @@ img.slideswipe {
 
 /* SWIPER CAROUSEL - End */
 
-/* setting background image for body */
 
-body.aboutme {
-    height: 100vh;
-    min-height: 400px;
-    background-size: cover;
-    background-image: url(../img/aboutmeback.jpg);
-
-}
-
-
-/* using media query to adjust image position on smaller devices.  */
-
-
-@media screen and (max-width:600px) {
-
-    body.aboutme {
-        background-position:35% 30% ;
-        /* change these numbers according to your image/ do not change both at the same time.  */
-        /* IDEA: first, play with these numbers with broweser's inspector tool */
-    }
-
-}
 
 .downloadmyresume {
  padding-top: 0px;
@@ -626,4 +562,58 @@ img.logonowuknow {
 
 .special {
   padding-top: 200px;
+}
+
+
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "in Progress...";
+    color: #ff7f50;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #2f3542;
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "that works";
+        color: green;
+    }
+    21%,40%{
+        content: "in Progress...";
+    }
+
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
 }
