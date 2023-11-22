@@ -316,11 +316,11 @@ background-color: black;
 background-blend-mode: screen;
 }
 section.module.parallax-3 {
-background-image: url("../img/swipe9.jpg");
+background-image: url("../img/swip9.jpg");
 background-position: 50% 0;
 background-repeat: repeat;
 background-attachment: fixed;
-background-size:  contain;
+background-size:  cover;
 background-color: black;
 background-blend-mode: screen;
 }
@@ -330,7 +330,7 @@ background-image: url("../img/hulgai.jpg");
 background-position: 50% 0;
 background-repeat: repeat;
 background-attachment: fixed;
-background-size:  cover;
+background-size:  contain;
 background-color: black;
 background-blend-mode: screen;
 }
@@ -405,6 +405,11 @@ background-blend-mode: screen;
 
   }
 
+  section.module.parallax-4 {
+    background-size:  contain;
+
+  }
+
   section.module.parallax-6 {
     background-image: url("../img/hyams2 copy.jpg");
     background-position: 10% 0;
@@ -418,13 +423,13 @@ background-blend-mode: screen;
   }
 
   section.module.parallax-3 {
-  background-image: url("../img/swipe9.jpg");
+  background-image: url("../img/swip9.jpg");
   background-position: 50% 0;
   background-repeat: repeat;
   background-attachment: fixed;
   background-color: black;
   background-blend-mode: screen;
-  background-size:  contain;
+  background-size:  cover;
   }
 
   section.module.parallax-5 {
@@ -586,7 +591,7 @@ img.logonowuknow {
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
-    background-color: #2f3542;
+    background-color: transparent;
     border-left: 2px solid #ff7f50;
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
