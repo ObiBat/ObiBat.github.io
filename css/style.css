@@ -411,7 +411,7 @@ background-blend-mode: screen;
   }
 
   section.module.parallax-6 {
-    background-image: url("../img/hyams2 copy.jpg");
+    background-image: url("../img/hyams2_copy.jpg");
     background-position: 10% 0;
     background-size:  contain;
   }
@@ -424,11 +424,7 @@ background-blend-mode: screen;
 
   section.module.parallax-3 {
   background-image: url("../img/swi9.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
-  background-attachment:  scroll;
-  background-color: black;
-  background-blend-mode: screen;
+  background-position: 10% 0;
   background-size:  contain;
   }
 
