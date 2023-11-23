@@ -416,7 +416,7 @@ background-blend-mode: screen;
 
   section.module.parallax-3 {
   background-image: url("../img/swi9.jpg");
-  background-position: -10% 0%;
+  background-position: 15% 0%;
   background-size:  contain;
   }
 
